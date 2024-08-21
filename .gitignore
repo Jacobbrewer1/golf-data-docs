@@ -23,3 +23,15 @@ go.work.sum
 
 # env file
 .env
+
+# Intellij Idea
+.idea/
+
+# Ignore all config files
+***/config.json
+
+# Ignore all binary files
+**/bin/
+
+# Ignore all tar files
+**/*.tar

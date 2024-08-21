@@ -1,0 +1,51 @@
+name: Deploy Docs
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every day at midnight
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: "docs-deploy"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Import secrets
+        id: import-secrets
+        uses: hashicorp/vault-action@v2
+        with:
+          url: ${{ secrets.VAULT_ADDR }}
+          method: userpass
+          username: ${{ secrets.VAULT_USER }}
+          password: ${{ secrets.VAULT_PASS }}
+          secrets: |
+            ${{ secrets.VAULT_MOUNT }}/data/${{ secrets.VAULT_GITHUB_API_NAME }} ${{ secrets.VAULT_GITHUB_API_KEY }} | GITHUB_TOKEN ;
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          repository: Jacobbrewer1/golf-data
+          path: ./golf-data
+          token: ${{ steps.import-secrets.outputs.GITHUB_TOKEN }}
+
+      - name: Build with openapi-generator
+        shell: bash
+        run: |
+          chmod +x gen-docs.sh
+          ./gen-docs.sh
+
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v5

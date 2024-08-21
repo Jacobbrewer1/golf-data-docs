@@ -1,2 +1,9 @@
-# golf-data-docs
-A repo to house the docs for the Golf Data API
+# Golf Data Docs
+
+Please find all the documentation for the Golf Data API here.
+
+The host and base path for the API is:
+
+```URL
+https://api.bthree.uk/golf/v1
+```
