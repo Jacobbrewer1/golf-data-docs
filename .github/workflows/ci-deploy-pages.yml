@@ -24,7 +24,7 @@ jobs:
 
       - name: Import secrets
         id: import-secrets
-        uses: hashicorp/vault-action@v2
+        uses: hashicorp/vault-action@v3
         with:
           url: ${{ secrets.VAULT_ADDR }}
           method: userpass
