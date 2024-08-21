@@ -3,5 +3,5 @@
 docker run --rm \
   -v "${PWD}"/golf-data:/local openapitools/openapi-generator-cli generate \
   -i /local/pkg/codegen/apis/api/routes.yaml \
-  -g html \
+  -g markdown \
   -o /local/docs
