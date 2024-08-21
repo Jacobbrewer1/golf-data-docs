@@ -20,7 +20,7 @@ Get a club by id
 
 |Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **club\_id** | **Long**|  | [default to null] |
+| **club\_id** | **Long**| The club id | [default to null] |
 
 ### Return type
 
@@ -50,7 +50,7 @@ Get all clubs
 | **last\_id** | **String**| Pagination details, last value of the id column on the previous page. | [optional] [default to null] |
 | **sort\_by** | **String**| Pagination details, sort column, if empty uses the id column. | [optional] [default to null] |
 | **sort\_dir** | **String**| Pagination details, sorting order. | [optional] [default to ASC] [enum: ASC, DESC] |
-| **name** | **String**| The name of the club to search for | [optional] [default to null] |
+| **name** | **String**| The name of the club | [optional] [default to null] |
 
 ### Return type
 
@@ -75,7 +75,7 @@ Get a course by id
 
 |Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **course\_id** | **Long**|  | [default to null] |
+| **course\_id** | **Long**| The course id | [default to null] |
 
 ### Return type
 
@@ -100,7 +100,7 @@ Get all courses for a club
 
 |Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **club\_id** | **Long**|  | [default to null] |
+| **club\_id** | **Long**| The club id | [default to null] |
 | **include\_details** | **Boolean**| Whether to include course details in the response | [optional] [default to null] |
 
 ### Return type

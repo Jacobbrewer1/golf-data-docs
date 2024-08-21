@@ -1,4 +1,3 @@
-.openapi-generator-ignore
 Apis/DefaultApi.md
 Models/club.md
 Models/club_course.md
