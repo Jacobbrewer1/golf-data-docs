@@ -46,6 +46,7 @@ jobs:
         run: |
           chmod +x gen-docs.sh
           ./gen-docs.sh
+          rm -rf ./golf-data
 
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v5
