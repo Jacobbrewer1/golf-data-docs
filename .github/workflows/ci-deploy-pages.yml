@@ -47,6 +47,8 @@ jobs:
           chmod +x gen-docs.sh
           ./gen-docs.sh
           rm -rf ./golf-data
+          rm -rf ./.openapi-generator
+          rm -rf ./.openapi-generator-ignore
 
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v5
