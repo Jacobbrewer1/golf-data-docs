@@ -1,0 +1,11 @@
+.openapi-generator-ignore
+Apis/DefaultApi.md
+Models/club.md
+Models/club_course.md
+Models/club_course_details.md
+Models/course.md
+Models/course_details.md
+Models/error_message.md
+Models/hole.md
+Models/message.md
+README.md
