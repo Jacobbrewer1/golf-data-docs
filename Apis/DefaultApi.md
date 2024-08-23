@@ -7,6 +7,7 @@ All URIs are relative to *https://api.bthree.uk/golf/v1*
 | [**getClubById**](DefaultApi.md#getClubById) | **GET** /clubs/{club_id} | Get a club by id |
 | [**getClubs**](DefaultApi.md#getClubs) | **GET** /clubs | Get all clubs |
 | [**getCourseById**](DefaultApi.md#getCourseById) | **GET** /courses/{course_id} | Get a course by id |
+| [**getCourses**](DefaultApi.md#getCourses) | **GET** /courses | Get all courses |
 | [**getCoursesForClub**](DefaultApi.md#getCoursesForClub) | **GET** /clubs/{club_id}/courses | Get all courses for a club |
 
 
@@ -80,6 +81,36 @@ Get a course by id
 ### Return type
 
 [**course**](../Models/course.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+<a name="getCourses"></a>
+# **getCourses**
+> List getCourses(limit, last\_val, last\_id, sort\_by, sort\_dir, name)
+
+Get all courses
+
+### Parameters
+
+|Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **limit** | **String**| Report type | [optional] [default to null] |
+| **last\_val** | **String**| Pagination details, last value of the sort column on the previous page. | [optional] [default to null] |
+| **last\_id** | **String**| Pagination details, last value of the id column on the previous page. | [optional] [default to null] |
+| **sort\_by** | **String**| Pagination details, sort column, if empty uses the id column. | [optional] [default to null] |
+| **sort\_dir** | **String**| Pagination details, sorting order. | [optional] [default to ASC] [enum: ASC, DESC] |
+| **name** | **String**| The name of the club | [optional] [default to null] |
+
+### Return type
+
+[**List**](../Models/course.md)
 
 ### Authorization
 
