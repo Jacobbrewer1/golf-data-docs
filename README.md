@@ -7,11 +7,11 @@ All URIs are relative to *https://api.bthree.uk/golf/v1*
 
 | Class | Method | HTTP request | Description |
 |------------ | ------------- | ------------- | -------------|
-| *DefaultApi* | [**getClubById**](Apis/DefaultApi.md#getclubbyid) | **GET** /clubs/{club_id} | Get a club by id |
-*DefaultApi* | [**getClubs**](Apis/DefaultApi.md#getclubs) | **GET** /clubs | Get all clubs |
-*DefaultApi* | [**getCourseById**](Apis/DefaultApi.md#getcoursebyid) | **GET** /courses/{course_id} | Get a course by id |
-*DefaultApi* | [**getCourses**](Apis/DefaultApi.md#getcourses) | **GET** /courses | Get all courses |
-*DefaultApi* | [**getCoursesForClub**](Apis/DefaultApi.md#getcoursesforclub) | **GET** /clubs/{club_id}/courses | Get all courses for a club |
+| *ClubsApi* | [**getClubById**](Apis/ClubsApi.md#getclubbyid) | **GET** /clubs/{club_id} | Get a club by id |
+*ClubsApi* | [**getClubs**](Apis/ClubsApi.md#getclubs) | **GET** /clubs | Get all clubs |
+| *CoursesApi* | [**getCourseById**](Apis/CoursesApi.md#getcoursebyid) | **GET** /courses/{course_id} | Get a course by id |
+*CoursesApi* | [**getCourses**](Apis/CoursesApi.md#getcourses) | **GET** /courses | Get all courses |
+*CoursesApi* | [**getCoursesForClub**](Apis/CoursesApi.md#getcoursesforclub) | **GET** /clubs/{club_id}/courses | Get all courses for a club |
 
 
 <a name="documentation-for-models"></a>

@@ -1,4 +1,5 @@
-Apis/DefaultApi.md
+Apis/ClubsApi.md
+Apis/CoursesApi.md
 Models/club.md
 Models/club_course.md
 Models/club_course_details.md
