@@ -20,10 +20,16 @@ All URIs are relative to *https://api.bthree.uk/golf/v1*
  - [club](./Models/club.md)
  - [club_course](./Models/club_course.md)
  - [club_course_details](./Models/club_course_details.md)
+ - [club_course_details_response](./Models/club_course_details_response.md)
+ - [club_course_response](./Models/club_course_response.md)
+ - [club_response](./Models/club_response.md)
  - [course](./Models/course.md)
  - [course_details](./Models/course_details.md)
+ - [course_details_response](./Models/course_details_response.md)
+ - [course_response](./Models/course_response.md)
  - [error_message](./Models/error_message.md)
  - [hole](./Models/hole.md)
+ - [hole_response](./Models/hole_response.md)
  - [message](./Models/message.md)
 
 

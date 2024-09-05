@@ -3,9 +3,15 @@ Apis/CoursesApi.md
 Models/club.md
 Models/club_course.md
 Models/club_course_details.md
+Models/club_course_details_response.md
+Models/club_course_response.md
+Models/club_response.md
 Models/course.md
 Models/course_details.md
+Models/course_details_response.md
+Models/course_response.md
 Models/error_message.md
 Models/hole.md
+Models/hole_response.md
 Models/message.md
 README.md

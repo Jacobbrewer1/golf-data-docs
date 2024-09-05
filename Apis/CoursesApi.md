@@ -38,7 +38,7 @@ No authorization required
 
 <a name="getCourses"></a>
 # **getCourses**
-> List getCourses(limit, last\_val, last\_id, sort\_by, sort\_dir, name)
+> course_response getCourses(limit, last\_val, last\_id, sort\_by, sort\_dir, name)
 
 Get all courses
 
@@ -57,7 +57,7 @@ Get all courses
 
 ### Return type
 
-[**List**](../Models/course.md)
+[**course_response**](../Models/course_response.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 
 <a name="getCoursesForClub"></a>
 # **getCoursesForClub**
-> List getCoursesForClub(club\_id, include\_details)
+> club_course_response getCoursesForClub(club\_id, include\_details)
 
 Get all courses for a club
 
@@ -85,7 +85,7 @@ Get all courses for a club
 
 ### Return type
 
-[**List**](../Models/club_course.md)
+[**club_course_response**](../Models/club_course_response.md)
 
 ### Authorization
 

@@ -37,7 +37,7 @@ No authorization required
 
 <a name="getClubs"></a>
 # **getClubs**
-> List getClubs(limit, last\_val, last\_id, sort\_by, sort\_dir, name)
+> club_response getClubs(limit, last\_val, last\_id, sort\_by, sort\_dir, name)
 
 Get all clubs
 
@@ -56,7 +56,7 @@ Get all clubs
 
 ### Return type
 
-[**List**](../Models/club.md)
+[**club_response**](../Models/club_response.md)
 
 ### Authorization
 
