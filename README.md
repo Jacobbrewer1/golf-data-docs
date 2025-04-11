@@ -9,8 +9,8 @@ All URIs are relative to *https://api.bthree.uk/golf/v1*
 |------------ | ------------- | ------------- | -------------|
 | *ClubsApi* | [**getClubs**](Apis/ClubsApi.md#getclubs) | **GET** /clubs | Get all clubs |
 | *CoursesApi* | [**getCourses**](Apis/CoursesApi.md#getcourses) | **GET** /clubs/{club_id}/courses | Get all courses for a club |
+*CoursesApi* | [**getMarkers**](Apis/CoursesApi.md#getmarkers) | **GET** /courses/{course_id}/markers | Get all markers for a course |
 | *HolesApi* | [**getHoles**](Apis/HolesApi.md#getholes) | **GET** /markers/{marker_id}/holes | Get all holes for a marker |
-*HolesApi* | [**getMarkers**](Apis/HolesApi.md#getmarkers) | **GET** /courses/{course_id}/markers | Get all markers for a course |
 
 
 <a name="documentation-for-models"></a>
