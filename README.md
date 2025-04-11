@@ -7,30 +7,24 @@ All URIs are relative to *https://api.bthree.uk/golf/v1*
 
 | Class | Method | HTTP request | Description |
 |------------ | ------------- | ------------- | -------------|
-| *ClubsApi* | [**getClubById**](Apis/ClubsApi.md#getclubbyid) | **GET** /clubs/{club_id} | Get a club by id |
-*ClubsApi* | [**getClubs**](Apis/ClubsApi.md#getclubs) | **GET** /clubs | Get all clubs |
-| *CoursesApi* | [**getCourseById**](Apis/CoursesApi.md#getcoursebyid) | **GET** /courses/{course_id} | Get a course by id |
-*CoursesApi* | [**getCourses**](Apis/CoursesApi.md#getcourses) | **GET** /courses | Get all courses |
-*CoursesApi* | [**getCoursesForClub**](Apis/CoursesApi.md#getcoursesforclub) | **GET** /clubs/{club_id}/courses | Get all courses for a club |
+| *ClubsApi* | [**getClubs**](Apis/ClubsApi.md#getclubs) | **GET** /clubs | Get all clubs |
+| *CoursesApi* | [**getCourses**](Apis/CoursesApi.md#getcourses) | **GET** /clubs/{club_id}/courses | Get all courses for a club |
+| *HolesApi* | [**getHoles**](Apis/HolesApi.md#getholes) | **GET** /markers/{marker_id}/holes | Get all holes for a marker |
+*HolesApi* | [**getMarkers**](Apis/HolesApi.md#getmarkers) | **GET** /courses/{course_id}/markers | Get all markers for a course |
 
 
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
  - [club](./Models/club.md)
- - [club_course](./Models/club_course.md)
- - [club_course_details](./Models/club_course_details.md)
- - [club_course_details_response](./Models/club_course_details_response.md)
- - [club_course_response](./Models/club_course_response.md)
- - [club_response](./Models/club_response.md)
  - [course](./Models/course.md)
- - [course_details](./Models/course_details.md)
- - [course_details_response](./Models/course_details_response.md)
- - [course_response](./Models/course_response.md)
  - [error_message](./Models/error_message.md)
+ - [getClubs_200_response](./Models/getClubs_200_response.md)
+ - [getCourses_200_response](./Models/getCourses_200_response.md)
+ - [getHoles_200_response](./Models/getHoles_200_response.md)
+ - [getMarkers_200_response](./Models/getMarkers_200_response.md)
  - [hole](./Models/hole.md)
- - [hole_response](./Models/hole_response.md)
- - [message](./Models/message.md)
+ - [marker](./Models/marker.md)
 
 
 <a name="documentation-for-authorization"></a>

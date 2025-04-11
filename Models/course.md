@@ -3,9 +3,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-| **id** | **Long** |  | [optional] [default to null] |
-| **name** | **String** |  | [optional] [default to null] |
-| **details** | [**List**](course_details.md) |  | [optional] [default to null] |
+| **id** | **Long** |  | [default to null] |
+| **name** | **String** |  | [default to null] |
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
