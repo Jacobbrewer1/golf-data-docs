@@ -20,10 +20,10 @@ Get all holes for a marker
 |Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **marker\_id** | **Long**| The ID of the marker | [default to null] |
-| **limit** | **Integer**| Report type | [optional] [default to null] |
+| **limit** | **Integer**| Pagination details, maximum number of records to return. | [optional] [default to 100] |
 | **last\_val** | **String**| Pagination details, last value of the sort column on the previous page. | [optional] [default to null] |
 | **last\_id** | **String**| Pagination details, last value of the id column on the previous page. | [optional] [default to null] |
-| **offset** | **Integer**| Pagination details, offset value. | [optional] [default to null] |
+| **offset** | **Integer**| Pagination details, offset value. | [optional] [default to 0] |
 | **sort\_by** | **String**| Pagination details, sort column, if empty uses the id column. | [optional] [default to null] |
 | **sort\_dir** | **String**| Pagination details, sorting order. | [optional] [default to asc] [enum: asc, desc] |
 
