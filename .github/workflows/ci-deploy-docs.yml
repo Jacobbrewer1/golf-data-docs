@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Import secrets
         id: import-secrets
@@ -32,7 +32,7 @@ jobs:
             ${{ secrets.VAULT_MOUNT }}/data/${{ secrets.VAULT_GITHUB_API_NAME }} ${{ secrets.VAULT_GITHUB_API_KEY }} | GITHUB_TOKEN ;
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: main
           repository: Jacobbrewer1/golf-data
